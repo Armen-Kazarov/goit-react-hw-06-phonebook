@@ -1,10 +1,8 @@
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-//import contactsReducer from "../../redux/contacts/contacts-reducers";
 import contactsActions from '../../redux/contacts/contacts-actions';
 import s from './ContactForm.module.css';
 import { getContacts } from '../../redux/contacts/contacts-selectors';
-//import { getVisibleContacts } from '../../redux/contacts/contacts-selectors';
 
 export default function ContactForm() {
   const [name, setName] = useState('');
